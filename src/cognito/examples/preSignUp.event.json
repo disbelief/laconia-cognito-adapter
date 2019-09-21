@@ -1,0 +1,23 @@
+{
+    "version": "1",
+    "region": "us-east-1",
+    "userPoolId": "us-east-1_jPBF2brRY",
+    "userName": "e0e159ad-d0f4-442e-ac54-31f588778e25",
+    "callerContext": {
+        "awsSdkVersion": "aws-sdk-unknown-unknown",
+        "clientId": "5kilr3b51me83j3op1snm4ra8u"
+    },
+    "triggerSource": "PreSignUp_SignUp",
+    "request": {
+        "userAttributes": {
+            "name": "Mike",
+            "email": "mike+4@auka.ca"
+        },
+        "validationData": null
+    },
+    "response": {
+        "autoConfirmUser": false,
+        "autoVerifyEmail": false,
+        "autoVerifyPhone": false
+    }
+}

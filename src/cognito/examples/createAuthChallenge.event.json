@@ -1,0 +1,27 @@
+{
+  "version": "1",
+  "region": "us-east-1",
+  "userPoolId": "us-east-1_kAB1PH0g0",
+  "userName": "e0e159ad-d0f4-442e-ac54-31f588778e25",
+  "callerContext": {
+    "awsSdkVersion": "aws-sdk-unknown-unknown",
+    "clientId": "1aiuf34isrf0lnlvod364ehl61"
+  },
+  "triggerSource": "CreateAuthChallenge_Authentication",
+  "request": {
+    "userAttributes": {
+      "sub": "e0e159ad-d0f4-442e-ac54-31f588778e25",
+      "email_verified": "true",
+      "cognito:user_status": "CONFIRMED",
+      "cognito:email_alias": "mike+4@auka.ca",
+      "email": "mike+4@auka.ca"
+    },
+    "challengeName": "CUSTOM_CHALLENGE",
+    "session": []
+  },
+  "response": {
+    "publicChallengeParameters": null,
+    "privateChallengeParameters": null,
+    "challengeMetadata": null
+  }
+}
