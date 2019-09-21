@@ -2,7 +2,7 @@
   "name": "laconia-cognito-adapter",
   "version": "1.0.0",
   "description": "A Laconia adapter implementation for Cognito lambda trigger events",
-  "main": "index.js",
+  "main": "dist/laconia-cognito-adapter.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "test": "jest"

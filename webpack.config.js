@@ -7,8 +7,7 @@ module.exports = {
     filename: 'laconia-cognito-adapter.js',
     libraryTarget: 'umd',
     globalObject: 'this',
-    // libraryExport: 'default',
-    library: 'laconia-cognito-adapter'
+    libraryExport: 'default'
   },
   mode: 'production',
   target: 'node',
