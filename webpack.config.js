@@ -8,7 +8,7 @@ module.exports = {
     libraryTarget: 'umd',
     globalObject: 'this',
     // libraryExport: 'default',
-    library: 'mote-models'
+    library: 'laconia-cognito-adapter'
   },
   mode: 'production',
   target: 'node',
