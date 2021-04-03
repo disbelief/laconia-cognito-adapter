@@ -17,12 +17,20 @@ export default class CognitoCreateAuthChallengeRecord extends CognitoRecord {
     this.challengeMetadata = challengeMetadata;
   }
 
+  getCodeChallenges() {
+    return (this.session || []).filter(challenge => challenge.challengeName === 'CUSTOM_CHALLENGE');
+  }
+
   isNewSession() {
-    return !this.session || !this.session.length;
+    return this.getCodeChallenges().length > 0;
   }
 
   getPreviousCode() {
-    const previousChallenge = this.session.slice(-1)[0];
-    return previousChallenge.challengeMetadata.match(/CODE-(\d*)/)[1];
+    const codeChallenges = this.getCodeChallenges();
+    if (codeChallenges.length > 0) {
+      const lastCodeChallenge = codeChallenges[codeChallenges.length - 1];
+      return lastCodeChallenge.challengeMetadata.match(/CODE-(\d*)/)[1];
+    }
+    return null;
   }
 }
