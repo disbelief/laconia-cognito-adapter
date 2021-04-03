@@ -22,7 +22,7 @@ export default class CognitoCreateAuthChallengeRecord extends CognitoRecord {
   }
 
   isNewSession() {
-    return this.getCodeChallenges().length > 0;
+    return this.getCodeChallenges().length === 0;
   }
 
   getPreviousCode() {
