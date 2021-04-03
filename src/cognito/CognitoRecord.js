@@ -3,6 +3,7 @@ export default class CognitoRecord {
     const { userAttributes } = request;
     this.userAttributes = userAttributes;
     this.cognitoId = this.userAttributes.sub;
+    this.request = request;
     this.response = response;
   }
 
